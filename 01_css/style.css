@@ -1,0 +1,447 @@
+body {
+    margin: 0;
+    font-family: futura-100, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1 {
+    font-size: 85px;
+    font-family: loretta-display-variable, sans-serif;
+    font-variation-settings: "wght" 300;
+    margin: 0;
+}
+
+p {
+    font-size: 25px;
+    margin: 17px 0 0 0;
+}
+
+/* --- Navigation & Sticky Elements --- */
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2000;
+    background-color: white;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 15px 15px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navigation a {
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 400;
+    display: block;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.navigation li {
+    flex-grow: 0;
+}
+
+.project a {
+    text-align: left;
+}
+
+.über_mich a {
+    text-align: center;
+}
+
+.language a {
+    text-align: right;
+}
+
+/* ------------------------------------------------------------------- */
+/* --- Project Grid Layout - BASIS --- */
+/* ------------------------------------------------------------------- */
+
+.project-grid {
+    display: grid;
+    padding: 0 15px 0 15px;
+    gap: 15px;
+    /* Definiert das universelle 6-Spalten-Raster für ALLE Projekte */
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/* H1 Sticky Container - Allgemeine Stile */
+.project-grid_title {
+    position: sticky;
+    top: 0; 
+    z-index: 999;
+    background-color: white;
+    padding-top: 60px;
+    min-height: 100vh;
+}
+
+/* Text Container  - Allgemeine Stile */
+.project-grid_text {
+    font-family: loretta-display-variable, sans-serif;
+    font-variation-settings: "wght" 300;
+    min-height: calc(100vh - 60px);
+}
+
+/* Image Container - Allgemeine Stile */
+.image-container {
+    position: relative;
+    z-index: 1000;
+}
+
+.auszeichnung {
+    font-size: 85px;
+    font-family: loretta-display-variable, sans-serif;
+    font-variation-settings: "wght" 700;
+    font-size: 85px;
+}
+
+
+/* ------------------------------------------------------------------- */
+/* --- Spezifisches Layout: Das Verhör --- */
+/* ------------------------------------------------------------------- */
+¨
+
+.project-grid.project-verhoer .project-grid_title {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+
+.project-grid.project-verhoer .grid-item-1 {
+    grid-column: 4 / 7;
+    grid-row: 2;
+}
+
+.project-grid.project-verhoer .grid-item-2 {
+    grid-column: 2 / 7;
+    grid-row: 3;
+}
+
+.project-grid.project-verhoer .grid-item-3 {
+    grid-column: 2 / 7;
+    grid-row: 4;
+}
+
+.project-grid.project-verhoer .grid-item-4 {
+    grid-column: 2 / 7;
+    grid-row: 5;
+}
+
+.project-grid.project-verhoer .grid-item-5 {
+    grid-column: 2 / 7;
+    grid-row: 6;
+}
+
+.project-grid.project-verhoer .grid-item-6 {
+    grid-column: 2 / 7;
+    grid-row: 7;
+}
+
+.project-grid.project-verhoer .grid-item-7 {
+    grid-column: 2 / 7;
+    grid-row: 8;
+}
+
+.project-grid.project-verhoer .project-grid_text {
+    grid-column: 4 / 7;
+    grid-row: 9;
+}
+
+/* ------------------------------------------------------------------- */
+/* --- Spezifisches Layout: Paris --- */
+/* ------------------------------------------------------------------- */
+
+.project-grid.project-paris .project-grid_title {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+
+.project-grid.project-paris  .grid-item-1 {
+    grid-column: 2 / 7;
+    grid-row: 2;
+}
+
+
+.project-grid.project-paris .grid-item-2 {
+    grid-column: 2 / 7;
+    grid-row: 3;
+}
+
+
+.project-grid.project-paris .grid-item-3 {
+    grid-column: 2 / 7;
+    grid-row: 4;
+}
+
+
+.project-grid.project-paris .grid-item-4 {
+    grid-column: 2 / 7;
+    grid-row: 5;
+}
+
+
+.project-grid.project-paris .grid-item-5 {
+    grid-column: 2 / 7;
+    grid-row: 6;
+}
+
+
+.project-grid.project-paris .grid-item-6 {
+    grid-column: 3 / 5;
+    grid-row: 7;
+}
+
+.project-grid.project-paris .grid-item-7 {
+    grid-column: 5 / 7;
+    grid-row: 7;
+}
+
+.project-grid.project-paris .grid-item-8 {
+    grid-column: 3 / 5;
+    grid-row: 8;
+}
+
+.project-grid.project-paris .grid-item-9 {
+    grid-column: 5 / 7;
+    grid-row: 8;
+}
+
+.project-grid.project-paris .project-grid_text {
+    grid-column: 4 / 7;
+    grid-row: 9;
+}
+
+
+/* ------------------------------------------------------------------- */
+/* --- Spezifisches Layout: Umsetzung --- */
+/* ------------------------------------------------------------------- */
+¨
+.project-grid.project-umsetzung .project-grid_title {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+
+.project-grid.project-umsetzung .grid-item-1 {
+    grid-column: 4 / 7;
+    grid-row: 2;
+}
+
+.project-grid.project-umsetzung .grid-item-2 {
+    grid-column: 2 / 7;
+    grid-row: 3;
+}
+
+.project-grid.project-umsetzung .grid-item-3 {
+    grid-column: 2 / 7;
+    grid-row: 4;
+}
+
+.project-grid.project-umsetzung .grid-item-4 {
+    grid-column: 2 / 7;
+    grid-row: 5;
+}
+
+.project-grid.project-umsetzung .grid-item-5 {
+    grid-column: 2 / 7;
+    grid-row: 6;
+}
+
+.project-grid.project-umsetzung .grid-item-6 {
+    grid-column: 2 / 7;
+    grid-row: 7;
+}
+
+
+.project-grid.project-umsetzung .project-grid_text {
+    grid-column: 4 / 7;
+    grid-row: 8;
+}
+
+
+/* ------------------------------------------------------------------- */
+/* --- Spezifisches Layout: London --- */
+/* ------------------------------------------------------------------- */
+
+.project-grid.project-london .project-grid_title {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+
+.project-grid.project-london  .grid-item-1 {
+    grid-column: 2 / 7;
+    grid-row: 2;
+}
+
+
+.project-grid.project-london .grid-item-2 {
+    grid-column: 2 / 7;
+    grid-row: 3;
+}
+
+
+.project-grid.project-london .grid-item-3 {
+    grid-column: 2 / 7;
+    grid-row: 4;
+}
+
+
+.project-grid.project-london .grid-item-4 {
+    grid-column: 2 / 7;
+    grid-row: 5;
+}
+
+
+.project-grid.project-london .grid-item-5 {
+    grid-column: 2 / 7;
+    grid-row: 6;
+}
+
+
+.project-grid.project-london .grid-item-6 {
+    grid-column: 3 / 5;
+    grid-row: 7;
+}
+
+.project-grid.project-london .grid-item-7 {
+    grid-column: 5 / 7;
+    grid-row: 7;
+}
+
+.project-grid.project-london .grid-item-8 {
+    grid-column: 3 / 5;
+    grid-row: 8;
+}
+
+.project-grid.project-london .grid-item-9 {
+    grid-column: 5 / 7;
+    grid-row: 8;
+}
+
+.project-grid.project-london .grid-item-10 {
+    grid-column: 3 / 5;
+    grid-row: 9;
+}
+
+.project-grid.project-london .grid-item-11 {
+    grid-column: 5 / 7;
+    grid-row: 9;
+}
+
+.project-grid.project-london .project-grid_text {
+    grid-column: 4 / 7;
+    grid-row: 10;
+}
+
+/* ------------------------------------------------------------------- */
+/* --- Spezifisches Layout: Möbelhaus --- */
+/* ------------------------------------------------------------------- */
+¨
+
+.project-grid.project-moebelhaus .project-grid_title {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+
+.project-grid.project-moebelhaus .grid-item-1 {
+    grid-column: 2 / 7;
+    grid-row: 2;
+}
+
+.project-grid.project-moebelhaus .grid-item-2 {
+    grid-column: 2 / 7;
+    grid-row: 3;
+}
+
+.project-grid.project-moebelhaus .grid-item-3 {
+    grid-column: 2 / 7;
+    grid-row: 4;
+}
+
+.project-grid.project-moebelhaus .grid-item-4 {
+    grid-column: 2 / 7;
+    grid-row: 5;
+}
+
+.project-grid.project-moebelhaus .grid-item-5 {
+    grid-column: 2 / 7;
+    grid-row: 6;
+}
+
+
+.project-grid.project-moebelhaus .project-grid_text {
+    grid-column: 4 / 7;
+    grid-row: 7;
+}
+
+/* ------------------------------------------------------------------- */
+/* --- Spezifisches Layout: Font Design --- */
+/* ------------------------------------------------------------------- */
+¨
+
+.project-grid.project-fontdesign .project-grid_title {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+
+
+.project-grid.project-fontdesign .project-grid_text {
+    grid-column: 4 / 7;
+    grid-row: 9;
+}
+
+/* ------------------------------------------------------------------- */
+/* --- Spezifisches Layout: Corporate --- */
+/* ------------------------------------------------------------------- */
+¨
+
+.project-grid.project-corporatedesign .project-grid_title {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+
+
+.project-grid.project-corporatedesign .project-grid_text {
+    grid-column: 4 / 7;
+    grid-row: 9;
+}
+
+/* ------------------------------------------------------------------- */
+/* --- Spezifisches Layout: Blickwechsel --- */
+/* ------------------------------------------------------------------- */
+¨
+
+.project-grid.project-blickwechsel .project-grid_title {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+
+
+.project-grid.project-blickwechsel .project-grid_text {
+    grid-column: 4 / 7;
+    grid-row: 9;
+}
