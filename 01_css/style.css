@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    font-family: futura-100, sans-serif;
+    font-family: config-variable, sans-serif;
+    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 500;
 }
 
 * {
@@ -14,8 +15,9 @@ img {
 
 h1 {
     font-size: 85px;
-    font-family: loretta-display-variable, sans-serif;
-    font-variation-settings: "wght" 300;
+    font-family: kepler-std-display, serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
 }
 
@@ -91,12 +93,17 @@ p {
     background-color: white;
     padding-top: 60px;
     min-height: 100vh;
+    /* ✨ KORREKTUR: Der Titel spannt sich standardmäßig über die Spalten 1, 2 und 3 */
+    grid-column: 1 / 4;
+    /* Optional: Standardmäßig in Zeile 1 platzieren */
+    grid-row: 1; 
 }
 
 /* Text Container  - Allgemeine Stile */
 .project-grid_text {
-    font-family: loretta-display-variable, sans-serif;
-    font-variation-settings: "wght" 300;
+    font-family: kepler-std-display, serif;
+    font-weight: 400;
+    font-style: normal;
     min-height: calc(100vh - 60px);
 }
 
@@ -106,22 +113,24 @@ p {
     z-index: 1000;
 }
 
-.auszeichnung {
-    font-size: 85px;
-    font-family: loretta-display-variable, sans-serif;
-    font-variation-settings: "wght" 700;
-    font-size: 85px;
+
+/* ------------------------------------------------------------------- */
+/* --- Spezifisches Layout: Homepage --- */
+/* ------------------------------------------------------------------- */
+
+.project-grid.project-main .project-grid_title {
+    /* grid-column: 1 / 4; wird durch die allgemeine Regel oben gesetzt */
+    /* grid-row: 1; wird durch die allgemeine Regel oben gesetzt */
 }
 
 
 /* ------------------------------------------------------------------- */
 /* --- Spezifisches Layout: Das Verhör --- */
 /* ------------------------------------------------------------------- */
-¨
 
 .project-grid.project-verhoer .project-grid_title {
-    grid-column: 1 / 4;
-    grid-row: 1;
+    /* grid-column: 1 / 4; wird durch die allgemeine Regel oben gesetzt */
+    /* grid-row: 1; wird durch die allgemeine Regel oben gesetzt */
 }
 
 
@@ -170,8 +179,8 @@ p {
 /* ------------------------------------------------------------------- */
 
 .project-grid.project-paris .project-grid_title {
-    grid-column: 1 / 4;
-    grid-row: 1;
+    /* grid-column: 1 / 4; wird durch die allgemeine Regel oben gesetzt */
+    /* grid-row: 1; wird durch die allgemeine Regel oben gesetzt */
 }
 
 
@@ -234,10 +243,10 @@ p {
 /* ------------------------------------------------------------------- */
 /* --- Spezifisches Layout: Umsetzung --- */
 /* ------------------------------------------------------------------- */
-¨
+
 .project-grid.project-umsetzung .project-grid_title {
-    grid-column: 1 / 4;
-    grid-row: 1;
+    /* grid-column: 1 / 4; wird durch die allgemeine Regel oben gesetzt */
+    /* grid-row: 1; wird durch die allgemeine Regel oben gesetzt */
 }
 
 
@@ -283,8 +292,8 @@ p {
 /* ------------------------------------------------------------------- */
 
 .project-grid.project-london .project-grid_title {
-    grid-column: 1 / 4;
-    grid-row: 1;
+    /* grid-column: 1 / 4; wird durch die allgemeine Regel oben gesetzt */
+    /* grid-row: 1; wird durch die allgemeine Regel oben gesetzt */
 }
 
 
@@ -356,11 +365,10 @@ p {
 /* ------------------------------------------------------------------- */
 /* --- Spezifisches Layout: Möbelhaus --- */
 /* ------------------------------------------------------------------- */
-¨
 
 .project-grid.project-moebelhaus .project-grid_title {
-    grid-column: 1 / 4;
-    grid-row: 1;
+    /* grid-column: 1 / 4; wird durch die allgemeine Regel oben gesetzt */
+    /* grid-row: 1; wird durch die allgemeine Regel oben gesetzt */
 }
 
 
@@ -398,13 +406,11 @@ p {
 /* ------------------------------------------------------------------- */
 /* --- Spezifisches Layout: Font Design --- */
 /* ------------------------------------------------------------------- */
-¨
 
 .project-grid.project-fontdesign .project-grid_title {
-    grid-column: 1 / 4;
-    grid-row: 1;
+    /* grid-column: 1 / 4; wird durch die allgemeine Regel oben gesetzt */
+    /* grid-row: 1; wird durch die allgemeine Regel oben gesetzt */
 }
-
 
 
 .project-grid.project-fontdesign .project-grid_text {
@@ -415,13 +421,11 @@ p {
 /* ------------------------------------------------------------------- */
 /* --- Spezifisches Layout: Corporate --- */
 /* ------------------------------------------------------------------- */
-¨
 
 .project-grid.project-corporatedesign .project-grid_title {
-    grid-column: 1 / 4;
-    grid-row: 1;
+    /* grid-column: 1 / 4; wird durch die allgemeine Regel oben gesetzt */
+    /* grid-row: 1; wird durch die allgemeine Regel oben gesetzt */
 }
-
 
 
 .project-grid.project-corporatedesign .project-grid_text {
@@ -432,13 +436,11 @@ p {
 /* ------------------------------------------------------------------- */
 /* --- Spezifisches Layout: Blickwechsel --- */
 /* ------------------------------------------------------------------- */
-¨
 
 .project-grid.project-blickwechsel .project-grid_title {
-    grid-column: 1 / 4;
-    grid-row: 1;
+    /* grid-column: 1 / 4; wird durch die allgemeine Regel oben gesetzt */
+    /* grid-row: 1; wird durch die allgemeine Regel oben gesetzt */
 }
-
 
 
 .project-grid.project-blickwechsel .project-grid_text {
