@@ -18,6 +18,7 @@ h1 {
     font-family: kepler-std-display, serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 94px;
     margin: 0;
 }
 
@@ -33,7 +34,6 @@ p {
     width: 100%;
     top: 0;
     z-index: 2000;
-    background-color: white;
 }
 
 .navigation ul {
@@ -47,7 +47,7 @@ p {
 
 .navigation a {
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     font-weight: 400;
     display: block;
@@ -92,7 +92,7 @@ p {
     z-index: 999;
     background-color: white;
     padding-top: 60px;
-    min-height: 100vh;
+    min-height: calc(100vh - 60px);
     /* ✨ KORREKTUR: Der Titel spannt sich standardmäßig über die Spalten 1, 2 und 3 */
     grid-column: 1 / 4;
     /* Optional: Standardmäßig in Zeile 1 platzieren */
@@ -126,6 +126,7 @@ p {
 .project-grid.project-main .grid-item-1 {
     grid-column: 2 / 5;
     grid-row: 2;
+    margin-top: -60px;
 }
 
 .project-grid.project-main .grid-item-2 {
@@ -164,37 +165,38 @@ p {
 
 
 .project-grid.project-verhoer .grid-item-1 {
-    grid-column: 4 / 7;
+    grid-column: 3 / 5;
     grid-row: 2;
+    margin-top: -60px;
 }
 
 .project-grid.project-verhoer .grid-item-2 {
-    grid-column: 2 / 7;
+    grid-column: 4 / 7;
     grid-row: 3;
 }
 
 .project-grid.project-verhoer .grid-item-3 {
-    grid-column: 2 / 7;
+    grid-column: 4 / 7;
     grid-row: 4;
 }
 
 .project-grid.project-verhoer .grid-item-4 {
-    grid-column: 2 / 7;
+    grid-column: 2 / 5;
     grid-row: 5;
 }
 
 .project-grid.project-verhoer .grid-item-5 {
-    grid-column: 2 / 7;
+    grid-column: 2 / 5;
     grid-row: 6;
 }
 
 .project-grid.project-verhoer .grid-item-6 {
-    grid-column: 2 / 7;
+    grid-column: 4 / 7;
     grid-row: 7;
 }
 
 .project-grid.project-verhoer .grid-item-7 {
-    grid-column: 2 / 7;
+    grid-column: 4 / 7;
     grid-row: 8;
 }
 
@@ -214,58 +216,59 @@ p {
 
 
 .project-grid.project-paris  .grid-item-1 {
-    grid-column: 2 / 7;
+    grid-column: 4 / 7;
     grid-row: 2;
+    margin-top: -60px;
 }
 
 
 .project-grid.project-paris .grid-item-2 {
-    grid-column: 2 / 7;
+    grid-column: 2 / 5;
     grid-row: 3;
 }
 
 
 .project-grid.project-paris .grid-item-3 {
-    grid-column: 2 / 7;
+    grid-column: 2 / 5;
     grid-row: 4;
 }
 
 
 .project-grid.project-paris .grid-item-4 {
-    grid-column: 2 / 7;
+    grid-column: 4 / 7;
     grid-row: 5;
 }
 
 
 .project-grid.project-paris .grid-item-5 {
-    grid-column: 2 / 7;
+    grid-column: 4 / 7;
     grid-row: 6;
 }
 
 
 .project-grid.project-paris .grid-item-6 {
-    grid-column: 3 / 5;
+    grid-column: 3 / 4;
     grid-row: 7;
 }
 
 .project-grid.project-paris .grid-item-7 {
-    grid-column: 5 / 7;
+    grid-column: 4 / 5;
     grid-row: 7;
 }
 
 .project-grid.project-paris .grid-item-8 {
-    grid-column: 3 / 5;
-    grid-row: 8;
+    grid-column: 5 / 6;
+    grid-row: 7;
 }
 
 .project-grid.project-paris .grid-item-9 {
-    grid-column: 5 / 7;
-    grid-row: 8;
+    grid-column: 6 / 7;
+    grid-row: 7;
 }
 
 .project-grid.project-paris .project-grid_text {
     grid-column: 4 / 7;
-    grid-row: 9;
+    grid-row: 8;
 }
 
 
@@ -282,6 +285,7 @@ p {
 .project-grid.project-umsetzung .grid-item-1 {
     grid-column: 5 / 7;
     grid-row: 2;
+    margin-top: -60px;
 }
 
 .project-grid.project-umsetzung .grid-item-2 {
@@ -327,68 +331,69 @@ p {
 
 
 .project-grid.project-london  .grid-item-1 {
-    grid-column: 2 / 7;
+    grid-column: 4 / 7;
     grid-row: 2;
+    margin-top: -60px;
 }
 
 
 .project-grid.project-london .grid-item-2 {
-    grid-column: 2 / 7;
+    grid-column: 2 / 5;
     grid-row: 3;
 }
 
 
 .project-grid.project-london .grid-item-3 {
-    grid-column: 2 / 7;
+    grid-column: 2 / 5;
     grid-row: 4;
 }
 
 
 .project-grid.project-london .grid-item-4 {
-    grid-column: 2 / 7;
+    grid-column: 2 / 5;
     grid-row: 5;
 }
 
 
 .project-grid.project-london .grid-item-5 {
-    grid-column: 2 / 7;
+    grid-column: 2 / 5;
     grid-row: 6;
 }
 
 
 .project-grid.project-london .grid-item-6 {
-    grid-column: 3 / 5;
+    grid-column: 2 / 3;
     grid-row: 7;
 }
 
 .project-grid.project-london .grid-item-7 {
-    grid-column: 5 / 7;
+    grid-column: 3 / 4;
     grid-row: 7;
 }
 
 .project-grid.project-london .grid-item-8 {
-    grid-column: 3 / 5;
-    grid-row: 8;
+    grid-column: 4 / 5;
+    grid-row: 7;
 }
 
 .project-grid.project-london .grid-item-9 {
-    grid-column: 5 / 7;
-    grid-row: 8;
+    grid-column: 5 / 6;
+    grid-row: 7;
 }
 
 .project-grid.project-london .grid-item-10 {
-    grid-column: 3 / 5;
-    grid-row: 9;
+    grid-column: 5 / 6;
+    grid-row: 8;
 }
 
 .project-grid.project-london .grid-item-11 {
-    grid-column: 5 / 7;
-    grid-row: 9;
+    grid-column: 6 / 7;
+    grid-row: 8;
 }
 
 .project-grid.project-london .project-grid_text {
     grid-column: 4 / 7;
-    grid-row: 10;
+    grid-row: 9;
 }
 
 /* ------------------------------------------------------------------- */
@@ -402,34 +407,31 @@ p {
 
 
 .project-grid.project-moebelhaus .grid-item-1 {
-    grid-column: 2 / 7;
+    grid-column: 2 / 5;
     grid-row: 2;
+    margin-top: -60px;
 }
 
+
 .project-grid.project-moebelhaus .grid-item-2 {
-    grid-column: 2 / 7;
+    grid-column: 4 / 7;
     grid-row: 3;
 }
 
 .project-grid.project-moebelhaus .grid-item-3 {
-    grid-column: 2 / 7;
+    grid-column: 4 / 7;
     grid-row: 4;
 }
 
 .project-grid.project-moebelhaus .grid-item-4 {
-    grid-column: 2 / 7;
+    grid-column: 4 / 7;
     grid-row: 5;
-}
-
-.project-grid.project-moebelhaus .grid-item-5 {
-    grid-column: 2 / 7;
-    grid-row: 6;
 }
 
 
 .project-grid.project-moebelhaus .project-grid_text {
     grid-column: 4 / 7;
-    grid-row: 7;
+    grid-row: 6;
 }
 
 /* ------------------------------------------------------------------- */
