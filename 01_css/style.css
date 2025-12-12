@@ -170,6 +170,12 @@ p {
     margin-top: -60px;
 }
 
+.project-grid.project-uebermich .project-grid_text_skills {
+    grid-column: 5 / 7;
+    grid-row: 2;
+    margin-top: -60px;
+}
+
 .project-grid.project-uebermich .project-grid_text {
     grid-column: 4 / 7;
     grid-row: 7;
