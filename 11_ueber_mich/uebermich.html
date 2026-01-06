@@ -7,23 +7,27 @@
     <link rel="stylesheet" href="../01_css/style.css"> 
    <link rel="stylesheet" href="https://use.typekit.net/ejp4lvp.css">
 
-    <title>Malous Portfolio </title>
+    <title>Malous Gut </title>
     <meta name="description" content="Malou Gut" />
 </head>
 
 <body>
-    <nav class="navigation">
+   <nav class="navigation">
         <ul>
-            <li class="project"> <a href="../index.html">MALOU GUT</a></li>
-            <li class="über_mich"><a href="">ÜBER MICH</a></li>
-            <li class="language"><a href="">DE/EN</a></li>
+            <li class="project"> <a href="/index.html">MALOU GUT</a></li>
+            <li class="über_mich"><a href="uebermich.html" data-i18n="nav_about" >ÜBER MICH</a></li>
+
+            <li class="language">
+                <a href="#" class="lang-btn" data-lang="de">DE</a> / 
+                <a href="#" class="lang-btn" data-lang="en">EN</a>
+            </li>
         </ul>
     </nav>
 
     <div class="project-grid project-uebermich">
 
         <div class="project-grid_title">
-            <h1>Ich bin Malou, eine Grafikerin in Ausbildung seit August 2023</h1>
+            <h1 data-i18n="uebermich_title" >Ich bin Malou, eine Grafikerin in Ausbildung seit August 2023</h1>
         </div>
 
         <div class="grid-item-1 image-container">
@@ -31,13 +35,12 @@
         </div>
 
         <div class="project-grid_text">
-            <p>
+            <p data-i18n="uebermich_text" >
             Gestaltung ist für mich eine Möglichkeit, meine Gedanken zu sammeln und zu strukturieren. Besonders in der Recherche und Konzeptfindung fühle ich mich zuhause, in Wissenschaft, Weltgeschichte und sozialen Strukturen finde ich immer wieder neue Inspiration. Im Alltag versuche ich, von meinem Umfeld zu lernen und meine Erkenntnisse direkt in meinen Gestaltungsprozess einzubauen.
             <br> 
             In der Zukunft will ich aktuelle politische Diskurse und gesellschaftlich relevante Themen näher an die Menschen bringen und damit die Betrachter*innen nicht nur informieren, sondern sie auch zum Nachdenken und Handeln anregen.
             <br> <br>
             Bei weiteren Fragen und Anliegen, schreibe mir gerne eine E-Mail unter radhamalou@gmail.com
-
             </p>
         </div>
 
@@ -51,6 +54,6 @@
 
 </body>
 
-<script src="/js/script.js"></script>
+<script src="/02_js/script.js"></script>
 
 </html>
