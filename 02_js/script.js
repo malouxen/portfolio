@@ -1,20 +1,15 @@
 /**
- * Malous Portfolio - Mehrsprachigkeits-Logik (i18n)
+ * Malous Portfolio - Gesamt-Logik
+ * 1. Mehrsprachigkeit (i18n)
+ * 2. Scroll-Position Memory
+ * 3. Intelligenter Home-Button
  */
 
-// Globaler Speicher für die geladenen Texte
 let translations = {};
 
-/**
- * Lädt die JSON-Datei basierend auf der gewählten Sprache.
- * Die Funktion ist so aufgebaut, dass sie den Ordner '13_lang' 
- * findet, egal ob man auf der Startseite oder in einem Unterordner ist.
- */
+// --- 1. SPRACH-LOGIK ---
+
 async function loadLanguage(lang) {
-    // Wir definieren verschiedene Wege, um den Ordner zu finden:
-    // 1. /13_lang/ (Absolut vom Hauptverzeichnis)
-    // 2. 13_lang/ (Relativ vom aktuellen Ort)
-    // 3. ../13_lang/ (Einen Ordner zurück)
     const paths = [
         `/13_lang/${lang}.json`,
         `13_lang/${lang}.json`,
@@ -22,70 +17,96 @@ async function loadLanguage(lang) {
     ];
 
     let success = false;
-
     for (const path of paths) {
         try {
             const response = await fetch(path);
             if (response.ok) {
                 translations = await response.json();
                 success = true;
-                console.log(`Sprachdatei erfolgreich geladen von: ${path}`);
-                break; // Suche beenden, wenn Datei gefunden wurde
+                break;
             }
-        } catch (error) {
-            // Falls dieser Pfad nicht klappt, versuchen wir den nächsten im Loop
-            continue; 
-        }
+        } catch (error) { continue; }
     }
 
     if (success) {
         updateUI(lang);
-    } else {
-        console.error("Die Sprachdatei konnte unter keinem der Pfade gefunden werden.");
     }
 }
 
-/**
- * Aktualisiert die Texte auf der Webseite
- */
 function updateUI(lang) {
-    // Suche alle Elemente mit dem Attribut [data-i18n]
     const elements = document.querySelectorAll('[data-i18n]');
-    
     elements.forEach(el => {
         const key = el.getAttribute('data-i18n');
-        
-        // Nutze .innerHTML statt .textContent, um <br> Tags aus der JSON zu erlauben
         if (translations[key]) {
             el.innerHTML = translations[key];
         }
     });
-
-    // Sprache im Browser-Gedächtnis speichern
     localStorage.setItem('malou_lang', lang);
-    
-    // HTML-Sprachattribut für SEO/Browser setzen
     document.documentElement.lang = lang;
 }
 
-/**
- * Initialisierung beim Laden der Webseite
- */
+// --- 2. INITIALISIERUNG BEIM LADEN ---
+
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Gespeicherte Sprache abrufen oder Standard 'de'
-    const savedLang = localStorage.getItem('malou_lang') || 'de';
     
-    // 2. Sprache beim Start laden
+    // A) Sprache laden
+    const savedLang = localStorage.getItem('malou_lang') || 'de';
     loadLanguage(savedLang);
 
-    // 3. Event-Listener für die Sprach-Buttons (DE/EN) hinzufügen
     const langButtons = document.querySelectorAll('.lang-btn');
-    
     langButtons.forEach(btn => {
         btn.addEventListener('click', (e) => {
-            e.preventDefault(); // Verhindert das Springen der Seite
+            e.preventDefault();
             const chosenLang = btn.getAttribute('data-lang');
             loadLanguage(chosenLang);
         });
     });
+
+    // B) Scroll-Position & Home-Button Logik
+    const isIndex = window.location.pathname.endsWith('index.html') || 
+                   window.location.pathname === '/' || 
+                   window.location.pathname.endsWith('Portfolio/'); // Je nach Server-Struktur
+
+    if (isIndex) {
+        // --- AUF DER STARTSEITE ---
+        
+        // 1. Position wiederherstellen, falls gespeichert
+        const savedScrollPos = sessionStorage.getItem('scrollPos');
+        if (savedScrollPos) {
+            // Ein kurzer Timeout ist nötig, damit das Grid fertig gerendert ist
+            setTimeout(() => {
+                window.scrollTo({
+                    top: parseInt(savedScrollPos),
+                    behavior: 'instant'
+                });
+                // Nach dem Sprung löschen, damit es beim Refresh wieder oben startet
+                sessionStorage.removeItem('scrollPos');
+            }, 100);
+        }
+
+        // 2. Position speichern, wenn ein Projekt angeklickt wird
+        const projectLinks = document.querySelectorAll('.project-grid a');
+        projectLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                sessionStorage.setItem('scrollPos', window.scrollY);
+            });
+        });
+
+    } else {
+        // --- AUF EINER UNTERSEITE ---
+
+        // 3. "MALOU GUT" Button als Zurück-Button konfigurieren
+        const homeBtn = document.querySelector('.project a');
+        if (homeBtn) {
+            homeBtn.addEventListener('click', (e) => {
+                // Prüfen, ob der Nutzer von der eigenen Seite kam
+                if (document.referrer.includes(window.location.hostname)) {
+                    e.preventDefault(); // Standard-Link-Sprung verhindern
+                    window.history.back(); // Browser-Zurück (behält Scroll-Position nativ bei)
+                }
+                // Wenn er direkt auf die Unterseite eingestiegen ist, 
+                // wird das e.preventDefault() ignoriert und der Link führt normal zur index.html
+            });
+        }
+    }
 });

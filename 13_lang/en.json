@@ -1,48 +1,52 @@
 {
+    "nav_projects": "PROJECTS",
+
     "nav_about": "ABOUT ME",
 
-    "main_title": "This portfolio provides an insight into my work over the last 3 years.",
+    "main_title": "This <i> portfolio </i> provides an insight into my work over the last 3 years.",
 
 
-    "verhoer_title": "The Interrogation is a photo series created in April 2024.",
+    "verhoer_title": "<i> The Interrogation </i> is a photo series created <br> in April 2024.",
 
     "verhoer_text": "Based on a self-written story, the photo series 'The Interrogation' was created. The film noir genre of the 1950s and 1960s served as a foundation, as did the clear language of Alfred Hitchcock. Across six photos, a single person slips into the roles of both inspector and accused. Through composition, light and shadow, the two figures appear to be in the same room. <br> <br> The project attempts to translate and realise the reference material as accurately as possible, while capturing the classic film noir atmosphere.",
 
 
-    "paris_title": "Avec moi le centre-ville respire is an editorial design created in August 2024.",
+    "paris_title": "<i>Avec moi le centre-ville</i> respire is an editorial design created in August 2024.",
 
     "paris_text": "Pedestrians walk through Paris without taking notice of their surroundings. With headphones in their ears, the streets become a monotonous cacophony. They overlook the fact that the city itself seems to be singing. <br> <br> Inside the layout, shop windows are broken down into their individual parts and rearranged. Across the pages, the individual windows, doors, and façades merge into a partiture. The editorial invites viewers to perceive their environment more concisely, encouraging them to view the city not only as a backdrop, but also as a space for coming together and sharing experiences.",
 
 
-    "umsetzung_title": "Wilderness is an analogue project that was created in January 2024.",
+    "umsetzung_title": "<i>Wilderness</i> is an analogue project <br> that was created in <br> January 2024.",
 
     "umsetzung_text": "A gardening object is realised countless times in different materials and formats. The saw becomes increasingly abstract across the entire spectrum of techniques, including printing, pencil and marker pen. From detailed descriptions with notes on texture and individual parts at the beginning, only vaguely defined forms of application remain at the end. <br> <br> The saw is depicted both in motion and at rest. Illustrative and graphic approaches merge to create an overall picture across all the pages that represents the fullness of a simple object.",
 
 
-    "london_title": "The Zoology is an editorial design created in August 2025.",
+    "london_title": "<i>The Zoology</i> is an editorial design created in August 2025.",
 
 
-    "moebelhaus_title": "Time Capsule of Design Icons is an editorial design created in October 2023",
+    "moebelhaus_title": "<i>Time Capsule of <br> Design Icons</i> is an editorial design created in October 2023",
 
     "moebelhaus_text": "A catalogue dedicated to three designers who were all inspired by the same era. It reimagines the language of the featured design objects. The influence of Bauhaus graphic design can be seen throughout. Strong contrasts and Cubist elements draw focus to the chairs and are reminiscent of an archive. The catalogue's materiality reflects Bauhaus architecture. The pages carry the feel of glass and concrete. Together, these elements form a time capsule of design history.",
 
 
-    "fontdesign_title": "From Deconstruction is a font design that was created in February 2024.",
+    "fontdesign_title": "<i>From Deconstruction</i> is a font design that was created in February 2024.",
 
     "fontdesign_text": "Over the course of several weeks, a Swisscom remote control is deconstructed and broken down into its individual components. A font based on the technology that serves as its foundation is created from the shapes found inside the motherboard or on the individual buttons. <br> <br> This project inspired me to familiarise myself with the programme glyphs and deepen my understanding of Illustrator. It also improved and strengthened the way I understand typography's form and language.",
 
 
-    "corporatedesign_title": "Slither to Victory is an corporate design created in November 2024",
+    "corporatedesign_title": "<i>Animal cruelty is not a delicacy</i>  is a corporate design created in December 2025",
 
     "corporatedesign_text": "The logo of this fictional surfing equipment brand is inspired by wave formation and the surfing scene in California during the 1960s and 1970s. The dynamic lines pay homage to the effortless movements of America's first surfing legends. <br> <br> A second corporate design for a fictional NHL team evolved from an already existing word and figurative mark. Drawing inspiration from the state flag and Greek influences, the Maryland Phytos were created. The focus of the logo design was not only working with reference material but also translating an existing design language into something new and exciting.",
 
 
-    "blickwechsel_title": "Rich, richer, richest is a poster design created in March 2025.",
+    "blickwechsel_title": "<i>Rich, richer, richest</i> is a poster design created in March 2025.",
 
-    "blickwechsel_text": "The top 1% of Swiss society owns over 40% of the country's combined wealth. They determine our political decisions, our sense of right and wrong, and how we interact as a community. A poster designed to imitate a lottery ticket draws attention to the unequal distribution of wealth, power, and security. It illustrates how wealth governs our system and is often passed down through the generations without being earned. The poster invites viewers to recognise wealth for what it is: sheer lottery luck. <br> <br> The middle class uses brands and logos as a costume. Status, recognition and influence are sought after; wealth is idealised. In the process, reality is often forgotten. Most people play dress up with mere symbols of wealth but will never truly belong. Distracted by the glamour of the brand-driven world, we cannot see the ever-widening wealth gap right in front of us. This photo series attempts to capture this feeling. Five bags from local supermarkets are overprinted with brand logos. A symbol of prosperity meets the reality of the average Swiss person.",
+    "blickwechsel_text": "The middle class uses brands and logos as a costume. Status, recognition and influence are sought after; wealth is idealised. In the process, reality is often forgotten. Most people play dress up with mere symbols of wealth but will never truly belong. Distracted by the glamour of the brand-driven world, we cannot see the ever-widening wealth gap right in front of us. This photo series attempts to capture this feeling. Five bags from local supermarkets are overprinted with brand logos. A symbol of prosperity meets the reality of the average Swiss person. <br> <br> The top 1% of Swiss society owns over 40% of the country's combined wealth. They determine our political decisions, our sense of right and wrong, and how we interact as a community. A poster designed to imitate a lottery ticket draws attention to the unequal distribution of wealth, power, and security. It illustrates how wealth governs our system and is often passed down through the generations without being earned. The poster invites viewers to recognise wealth for what it is: sheer lottery luck.",
 
 
-    "uebermich_title": "I am Malou, a graphic designer in training since August 2023.",
+    "uebermich_title": "I am <i> Malou </i>, 18 years old and a graphic designer in training since August 2023.",
 
-    "uebermich_text": "Design has always allowed me to organise and structure my thoughts. I feel especially at home in research and concept development. My inspiration springs from science, world history, and social structures. In everyday life, I try to learn from my surroundings and incorporate my findings directly into my design process. <br> <br> In the future, I want to bring political discourse and socially relevant topics closer to observers. My work aims not only to inform, but also to encourage reflection and action. <br> <br> If you have any further questions or concerns, please email me at radhamalou@gmail.com"
+    "uebermich_info": "InDesign, Photoshop, Illustrator, After Effects, Figma, HTML/CSS <br> <br> German (Native speaker), English (C1), French (B2) ",
+
+    "uebermich_text": "Design has always allowed me to organise and structure my thoughts. I feel especially at home in research and concept development. My inspiration springs from science, world history, and social structures. In everyday life, I try to learn from my surroundings and incorporate my findings directly into my design process. <br> <br> In the future, I want to bring political discourse and socially relevant topics closer to observers. My work aims not only to inform, but also to encourage reflection and action. <br> <br> If you have any further questions or concerns, please email me at malougut.grafik@gmail.com"
 }

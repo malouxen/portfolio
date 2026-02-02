@@ -1,16 +1,19 @@
 body {
     margin: 0;
-    font-family: config-variable, sans-serif;
-    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 500;
+    font-family: oso-sans-semicondensed, sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 * {
     box-sizing: border-box;
 }
 
-img {
+/* Suche diesen Block in deinem CSS und füge 'video' hinzu */
+img, video {
     width: 100%;
     display: block;
+    height: auto; /* Sorgt dafür, dass die Proportionen erhalten bleiben */
 }
 
 h1 {
@@ -23,9 +26,12 @@ h1 {
 }
 
 p {
-    font-size: 25px;
+    font-family: oso-sans-semicondensed, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
     margin: 17px 0 0 0;
-    line-height: 36px;
+    line-height: 32px;
 }
 
 /* --- Navigation & Sticky Elements --- */
@@ -109,6 +115,13 @@ p {
     min-height: calc(100vh - 60px);
 }
 
+.project-grid_info {
+    font-family: kepler-std-display, serif;
+    font-weight: 400;
+    font-style: normal;
+    min-height: calc(100vh - 60px);
+}
+
 /* Image Container - Allgemeine Stile */
 .image-container {
     position: relative;
@@ -132,28 +145,38 @@ p {
 }
 
 .project-grid.project-main .grid-item-2 {
-    grid-column: 4 / 7;
+    grid-column: 5 / 7;
     grid-row: 3;
 }
 
 .project-grid.project-main .grid-item-3 {
-    grid-column: 4 / 7;
+    grid-column: 2 / 5;
     grid-row: 4;
 }
 
 .project-grid.project-main .grid-item-4 {
-    grid-column: 2 / 5;
+    grid-column: 4 / 7;
     grid-row: 5;
 }
 
-.project-grid.project-main .grid-item-6 {
-    grid-column: 2 / 5;
+.project-grid.project-main .grid-item-5 {
+    grid-column: 2 / 4;
     grid-row: 6;
+}
+
+.project-grid.project-main .grid-item-6 {
+    grid-column: 4 / 6;
+    grid-row: 7;
+}
+
+.project-grid.project-main .grid-item-7 {
+    grid-column: 4 / 6;
+    grid-row: 8;
 }
 
 .project-grid.project-main .project-grid_text {
     grid-column: 4 / 7;
-    grid-row: 7;
+    grid-row: 9;
 }
 
 /* ------------------------------------------------------------------- */
@@ -171,10 +194,10 @@ p {
     margin-top: -60px;
 }
 
-.project-grid.project-uebermich .project-grid_text_skills {
-    grid-column: 5 / 7;
+.project-grid.project-uebermich .project-grid_info {
+    grid-column: 5 / 6;
     grid-row: 2;
-    margin-top: -60px;
+    margin-top: -80px;
 }
 
 .project-grid.project-uebermich .project-grid_text {
@@ -243,59 +266,49 @@ p {
 
 
 .project-grid.project-paris  .grid-item-1 {
-    grid-column: 4 / 7;
+    grid-column: 2 / 5;
     grid-row: 2;
     margin-top: -60px;
 }
 
 
 .project-grid.project-paris .grid-item-2 {
-    grid-column: 2 / 5;
+    grid-column: 4 / 7;
     grid-row: 3;
 }
 
 
 .project-grid.project-paris .grid-item-3 {
-    grid-column: 2 / 5;
+    grid-column: 4 / 7;
     grid-row: 4;
 }
 
 
 .project-grid.project-paris .grid-item-4 {
-    grid-column: 4 / 7;
+    grid-column: 2 / 5;
     grid-row: 5;
 }
 
 
 .project-grid.project-paris .grid-item-5 {
-    grid-column: 4 / 7;
+    grid-column: 2 / 5;
     grid-row: 6;
 }
 
 
 .project-grid.project-paris .grid-item-6 {
-    grid-column: 3 / 4;
+    grid-column: 5 / 7;
     grid-row: 7;
 }
 
 .project-grid.project-paris .grid-item-7 {
-    grid-column: 4 / 5;
-    grid-row: 7;
-}
-
-.project-grid.project-paris .grid-item-8 {
-    grid-column: 5 / 6;
-    grid-row: 7;
-}
-
-.project-grid.project-paris .grid-item-9 {
-    grid-column: 6 / 7;
-    grid-row: 7;
+    grid-column: 3 / 5;
+    grid-row: 8;
 }
 
 .project-grid.project-paris .project-grid_text {
     grid-column: 4 / 7;
-    grid-row: 8;
+    grid-row: 11;
 }
 
 
@@ -310,33 +323,33 @@ p {
 
 
 .project-grid.project-umsetzung .grid-item-1 {
-    grid-column: 5 / 7;
+    grid-column: 2 / 4;
     grid-row: 2;
     margin-top: -60px;
 }
 
 .project-grid.project-umsetzung .grid-item-2 {
-    grid-column: 2 / 5;
+    grid-column: 4 / 7;
     grid-row: 3;
 }
 
 .project-grid.project-umsetzung .grid-item-3 {
-    grid-column: 4 / 7;
+    grid-column: 2 / 5;
     grid-row: 4;
 }
 
 .project-grid.project-umsetzung .grid-item-4 {
-    grid-column: 4 / 7;
+    grid-column: 2 / 5;
     grid-row: 5;
 }
 
 .project-grid.project-umsetzung .grid-item-5 {
-    grid-column: 2 / 5;
+    grid-column: 4 / 7;
     grid-row: 7;
 }
 
 .project-grid.project-umsetzung .grid-item-6 {
-    grid-column: 2 / 5;
+    grid-column: 4 / 7;
     grid-row: 6;
 }
 
@@ -358,69 +371,69 @@ p {
 
 
 .project-grid.project-london  .grid-item-1 {
-    grid-column: 4 / 7;
+    grid-column: 2 / 5;
     grid-row: 2;
     margin-top: -60px;
 }
 
 
 .project-grid.project-london .grid-item-2 {
-    grid-column: 2 / 5;
+    grid-column: 4 / 7;
     grid-row: 3;
 }
 
 
 .project-grid.project-london .grid-item-3 {
-    grid-column: 2 / 5;
+    grid-column: 4 / 7;
     grid-row: 4;
 }
 
 
 .project-grid.project-london .grid-item-4 {
-    grid-column: 2 / 5;
+    grid-column: 4 / 7;
     grid-row: 5;
 }
 
 
 .project-grid.project-london .grid-item-5 {
-    grid-column: 2 / 5;
+    grid-column: 4 / 7;
     grid-row: 6;
 }
 
 
 .project-grid.project-london .grid-item-6 {
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
     grid-row: 7;
 }
 
 .project-grid.project-london .grid-item-7 {
-    grid-column: 3 / 4;
-    grid-row: 7;
+    grid-column: 4 / 6;
+    grid-row: 8;
 }
 
 .project-grid.project-london .grid-item-8 {
-    grid-column: 4 / 5;
-    grid-row: 7;
+    grid-column: 4 / 6;
+    grid-row: 9;
 }
 
 .project-grid.project-london .grid-item-9 {
-    grid-column: 5 / 6;
-    grid-row: 7;
+    grid-column: 2 / 4;
+    grid-row: 10;
 }
 
 .project-grid.project-london .grid-item-10 {
-    grid-column: 5 / 6;
-    grid-row: 8;
+    grid-column: 5 / 7;
+    grid-row: 11;
 }
 
 .project-grid.project-london .grid-item-11 {
-    grid-column: 6 / 7;
-    grid-row: 8;
+    grid-column: 5 / 7;
+    grid-row: 12;
 }
 
 .project-grid.project-london .project-grid_text {
     grid-column: 4 / 7;
-    grid-row: 9;
+    grid-row: 13;
 }
 
 /* ------------------------------------------------------------------- */
@@ -491,6 +504,36 @@ p {
     grid-row: 9;
 }
 
+.project-grid.project-corporatedesign .grid-item-1 {
+    grid-column: 3 / 5;
+    grid-row: 2;
+}
+
+.project-grid.project-corporatedesign .grid-item-2 {
+    grid-column: 5 / 7;
+    grid-row: 3;
+}
+
+.project-grid.project-corporatedesign .grid-item-3 {
+    grid-column: 3 / 5;
+    grid-row: 4;
+}
+
+.project-grid.project-corporatedesign .grid-item-4 {
+    grid-column: 3 / 5;
+    grid-row: 5;
+}
+
+.project-grid.project-corporatedesign .grid-item-5 {
+    grid-column: 5 / 7;
+    grid-row: 6;
+}
+
+.project-grid.project-corporatedesign .grid-item-6 {
+    grid-column: 4 / 5;
+    grid-row: 7;
+}
+
 /* ------------------------------------------------------------------- */
 /* --- Spezifisches Layout: Blickwechsel --- */
 /* ------------------------------------------------------------------- */
@@ -500,8 +543,42 @@ p {
     /* grid-row: 1; wird durch die allgemeine Regel oben gesetzt */
 }
 
+.project-grid.project-blickwechsel .grid-item-1 {
+    grid-column: 3 / 5;
+    grid-row: 2;
+}
+
+.project-grid.project-blickwechsel .grid-item-2 {
+    grid-column: 5 / 7;
+    grid-row: 3;
+}
+
+.project-grid.project-blickwechsel .grid-item-3 {
+    grid-column: 5 / 7;
+    grid-row: 4;
+}
+
+.project-grid.project-blickwechsel .grid-item-4 {
+    grid-column: 3 / 5;
+    grid-row: 5;
+}
+
+.project-grid.project-blickwechsel .grid-item-5 {
+    grid-column: 3 / 5;
+    grid-row: 6;
+}
+
+.project-grid.project-blickwechsel .grid-item-6 {
+    grid-column: 5 / 7;
+    grid-row: 7;
+}
+
+.project-grid.project-blickwechsel .grid-item-7 {
+    grid-column: 3 / 5;
+    grid-row: 8;
+}
 
 .project-grid.project-blickwechsel .project-grid_text {
     grid-column: 4 / 7;
-    grid-row: 9;
+    grid-row: 13;
 }
