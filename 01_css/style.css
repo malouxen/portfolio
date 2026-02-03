@@ -81,6 +81,16 @@ p {
     text-align: right;
 }
 
+/* Styling für den E-Mail Link im Text */
+.email-link {
+    color: black;
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
 /* ------------------------------------------------------------------- */
 /* --- Project Grid Layout - BASIS --- */
 /* ------------------------------------------------------------------- */
